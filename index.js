@@ -18,7 +18,7 @@ async function visitWebsiteAndGetEmail(url)
 {
   try 
   {
-    const response = await axios.get(url);
+    const response = await axios.get(url, { timeout: 180000 });
     console.log(url); 
     const emails = findEmails(response.data);
     console.log({url, emails});
