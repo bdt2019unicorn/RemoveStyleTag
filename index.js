@@ -35,7 +35,26 @@ async function visitWebsiteAndGetEmail(url)
 
 app.get('/', (req, res) => {
   console.log('Received GET request at /');
-  res.send('Hello World! Testing');
+  var html = 
+    `
+      <html>
+        <head>
+          <script async="" id="ga4-src" src="https://www.googletagmanager.com/gtag/js?id=GTM-MN9MWGTK"></script>
+          <script id="ga4-init">
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);} 
+              gtag('js', new Date());
+              gtag('config', 'GTM-MN9MWGTK');
+          </script>
+        </head>
+        <body>
+          <h1>Hello World! Testing Google Tag Manager</h1>
+        </body>
+      </html>
+    `; 
+
+  
+  res.send(html);
 });
 
 app.post('/remove-style-tag', (req, res) => {
