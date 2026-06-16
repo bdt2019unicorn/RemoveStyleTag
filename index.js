@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
     `
       <html>
         <head>
-          <script async="" id="ga4-src" src="https://www.googletagmanager.com/gtag/js?id=GTM-MN9MWGTK"></script>
+          <script id="ga4-src" src="https://www.googletagmanager.com/gtag/js?id=GTM-MN9MWGTK"></script>
           <script id="ga4-init">
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);} 
