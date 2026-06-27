@@ -45,8 +45,8 @@ app.get('/', (req, res) => {
         <div>
           <iframe
     src="https://www.chatbase.co/chatbot-iframe/8R8_JWgLRur3p8k3-9X6x"
-    width="100%"
-    style="height: 100%; min-height: 700px"
+    width="10%"
+    style="height: 10%; min-height: 250px"
     frameborder="0"
     allow="microphone"
 ></iframe>
