@@ -39,7 +39,18 @@ app.get('/', (req, res) => {
     `
       <html>
         <body>
-          <h1>Hello World! Testing Google Tag Manager</h1>
+
+        <p>testing chat bot</p>
+
+        <div>
+          <iframe
+    src="https://www.chatbase.co/chatbot-iframe/8R8_JWgLRur3p8k3-9X6x"
+    width="100%"
+    style="height: 100%; min-height: 700px"
+    frameborder="0"
+    allow="microphone"
+></iframe>
+        </div>
         </body>
       </html>
     `; 
